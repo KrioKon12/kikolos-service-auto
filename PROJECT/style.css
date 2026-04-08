@@ -1,78 +1,78 @@
 :root {
-  --negru: #111111;
-  --alb: #ffffff;
-  --gri: #f4f4f4;
-  --gri-med: #888888;
-  --rosu: #d32f2f;
-  --rosu-int: #b71c1c;
-  --border: #dddddd;
+    --negru: #111111;
+    --alb: #ffffff;
+    --gri: #f4f4f4;
+    --gri-med: #888888;
+    --rosu: #d32f2f;
+    --rosu-int: #b71c1c;
+    --border: #dddddd;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: "DM Sans", sans-serif;
-  color: var(--negru);
+    font-family: "DM Sans", sans-serif;
+    color: var(--negru);
 }
 
 /* NAV */
 nav {
-  background: var(--negru);
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
+    background: var(--negru);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 .nav-logo {
-  color: white;
-  font-family: "Bebas Neue";
+    color: white;
+    font-family: "Bebas Neue";
 }
 
 .nav-links {
-  display: flex;
-  gap: 10px;
+    display: flex;
+    gap: 10px;
 }
 
 .nav-links a {
-  color: #ccc;
-  text-decoration: none;
+    color: #ccc;
+    text-decoration: none;
 }
 
 /* HERO */
 #acasa {
-  background: var(--negru);
-  color: white;
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    background: var(--negru);
+    color: white;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* SECTIONS */
 section {
-  padding: 60px;
+    padding: 60px;
 }
 
 .linie-rosie {
-  width: 50px;
-  height: 4px;
-  background: var(--rosu);
-  margin: 10px 0;
+    width: 50px;
+    height: 4px;
+    background: var(--rosu);
+    margin: 10px 0;
 }
 
 /* SERVICII */
 .servicii-grid {
-  display: flex;
-  gap: 20px;
+    display: flex;
+    gap: 20px;
 }
 
 .card {
-  background: white;
-  border: 1px solid #ddd;
-  padding: 20px;
+    background: white;
+    border: 1px solid #ddd;
+    padding: 20px;
 }
