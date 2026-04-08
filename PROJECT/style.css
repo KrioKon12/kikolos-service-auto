@@ -1,415 +1,78 @@
-/* =====================
-   VARIABILE & RESET
-===================== */
 :root {
-    --negru: #111111;
-    --alb: #ffffff;
-    --gri: #f4f4f4;
-    --gri-med: #888888;
-    --rosu: #d32f2f;
-    --rosu-int: #b71c1c;
-    --border: #dddddd;
+  --negru: #111111;
+  --alb: #ffffff;
+  --gri: #f4f4f4;
+  --gri-med: #888888;
+  --rosu: #d32f2f;
+  --rosu-int: #b71c1c;
+  --border: #dddddd;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'DM Sans', sans-serif;
-    color: var(--negru);
-    background: var(--alb);
-    font-size: 16px;
-    line-height: 1.6;
+  font-family: "DM Sans", sans-serif;
+  color: var(--negru);
 }
 
-/* =====================
-   NAVIGARE
-===================== */
+/* NAV */
 nav {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    background: var(--negru);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 48px;
-    height: 64px;
+  background: var(--negru);
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
 
 .nav-logo {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 24px;
-    color: var(--alb);
-    letter-spacing: 2px;
-}
-
-.nav-logo span {
-    color: var(--rosu);
+  color: white;
+  font-family: "Bebas Neue";
 }
 
 .nav-links {
-    display: flex;
-    gap: 8px;
-    list-style: none;
+  display: flex;
+  gap: 10px;
 }
 
 .nav-links a {
-    color: #cccccc;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 8px 16px;
-    border-radius: 4px;
-    transition: color 0.2s, background 0.2s;
+  color: #ccc;
+  text-decoration: none;
 }
 
-.nav-links a:hover {
-    color: var(--alb);
-    background: rgba(255, 255, 255, 0.08);
-}
-
-.nav-links a.btn-inregistrare {
-    background: var(--rosu);
-    color: var(--alb);
-    border-radius: 4px;
-}
-
-.nav-links a.btn-inregistrare:hover {
-    background: var(--rosu-int);
-}
-
-/* =====================
-   HERO – ACASĂ
-===================== */
+/* HERO */
 #acasa {
-    background: var(--negru);
-    color: var(--alb);
-    min-height: 520px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 80px 24px;
-    position: relative;
-    overflow: hidden;
+  background: var(--negru);
+  color: white;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-/* linie decorativă roșie */
-#acasa::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background: var(--rosu);
-}
-
-#acasa h1 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 88px;
-    letter-spacing: 6px;
-    line-height: 1;
-    color: var(--alb);
-}
-
-#acasa h1 span {
-    color: var(--rosu);
-}
-
-#acasa p {
-    margin-top: 16px;
-    font-size: 20px;
-    color: #bbbbbb;
-    letter-spacing: 1px;
-}
-
-.btn-programare {
-    margin-top: 40px;
-    display: inline-block;
-    background: var(--rosu);
-    color: var(--alb);
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 15px;
-    padding: 14px 40px;
-    border-radius: 4px;
-    letter-spacing: 0.5px;
-    transition: background 0.2s, transform 0.1s;
-}
-
-.btn-programare:hover {
-    background: var(--rosu-int);
-    transform: translateY(-2px);
-}
-
-/* =====================
-   SECȚIUNI COMUNE
-===================== */
+/* SECTIONS */
 section {
-    padding: 80px 48px;
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-section h2 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 42px;
-    letter-spacing: 3px;
-    margin-bottom: 8px;
-    color: var(--negru);
+  padding: 60px;
 }
 
 .linie-rosie {
-    width: 48px;
-    height: 4px;
-    background: var(--rosu);
-    margin-bottom: 32px;
+  width: 50px;
+  height: 4px;
+  background: var(--rosu);
+  margin: 10px 0;
 }
 
-/* =====================
-   DESPRE NOI
-===================== */
-#despre {
-    border-bottom: 1px solid var(--border);
-}
-
-#despre p {
-    font-size: 17px;
-    color: #444444;
-    max-width: 640px;
-    line-height: 1.75;
-}
-
-/* =====================
-   SERVICII
-===================== */
-#servicii {
-    background: var(--gri);
-    max-width: 100%;
-    padding: 80px 48px;
-}
-
-#servicii .inner {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
+/* SERVICII */
 .servicii-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 24px;
-    margin-top: 0;
+  display: flex;
+  gap: 20px;
 }
 
 .card {
-    background: var(--alb);
-    border: 1px solid var(--border);
-    border-top: 4px solid var(--rosu);
-    border-radius: 6px;
-    padding: 32px 28px;
-}
-
-.card-icon {
-    font-size: 32px;
-    margin-bottom: 16px;
-}
-
-.card h3 {
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 22px;
-    letter-spacing: 2px;
-    margin-bottom: 10px;
-    color: var(--negru);
-}
-
-.card p {
-    font-size: 14px;
-    color: var(--gri-med);
-    line-height: 1.65;
-}
-
-/* =====================
-   CONTACT
-===================== */
-#contact {
-    border-bottom: 1px solid var(--border);
-}
-
-.contact-lista {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
-
-.contact-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-}
-
-.contact-icon {
-    width: 44px;
-    height: 44px;
-    background: var(--negru);
-    color: var(--alb);
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    flex-shrink: 0;
-}
-
-.contact-text strong {
-    display: block;
-    font-size: 13px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    color: var(--gri-med);
-    margin-bottom: 2px;
-}
-
-.contact-text span {
-    font-size: 16px;
-    color: var(--negru);
-}
-
-/* =====================
-   ÎNREGISTRARE
-===================== */
-#inregistrare {
-    background: var(--negru);
-    max-width: 100%;
-    padding: 80px 48px;
-}
-
-#inregistrare .inner {
-    max-width: 960px;
-    margin: 0 auto;
-}
-
-#inregistrare h2 {
-    color: var(--alb);
-}
-
-#inregistrare .linie-rosie {
-    background: var(--rosu);
-}
-
-.form-grup {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    max-width: 440px;
-}
-
-.form-grup label {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    font-size: 14px;
-    font-weight: 500;
-    color: #bbbbbb;
-    letter-spacing: 0.5px;
-}
-
-.form-grup input {
-    padding: 12px 16px;
-    border: 1px solid #333333;
-    border-radius: 4px;
-    background: #1a1a1a;
-    color: var(--alb);
-    font-family: 'DM Sans', sans-serif;
-    font-size: 15px;
-    outline: none;
-    transition: border-color 0.2s;
-}
-
-.form-grup input:focus {
-    border-color: var(--rosu);
-}
-
-.form-grup input::placeholder {
-    color: #555555;
-}
-
-.btn-submit {
-    margin-top: 8px;
-    background: var(--rosu);
-    color: var(--alb);
-    border: none;
-    padding: 14px 40px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    border-radius: 4px;
-    cursor: pointer;
-    letter-spacing: 0.5px;
-    align-self: flex-start;
-    transition: background 0.2s;
-}
-
-.btn-submit:hover {
-    background: var(--rosu-int);
-}
-
-/* =====================
-   FOOTER
-===================== */
-footer {
-    background: #0a0a0a;
-    color: #555555;
-    text-align: center;
-    padding: 24px;
-    font-size: 13px;
-}
-
-footer span {
-    color: var(--rosu);
-}
-
-/* =====================
-   RESPONSIVE
-===================== */
-@media (max-width: 700px) {
-    nav {
-        padding: 0 20px;
-        flex-direction: column;
-        height: auto;
-        padding: 16px 20px;
-        gap: 12px;
-    }
-
-    .nav-links {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 4px;
-    }
-
-    #acasa h1 {
-        font-size: 52px;
-    }
-
-    section {
-        padding: 60px 24px;
-    }
-
-    #servicii,
-    #inregistrare {
-        padding: 60px 24px;
-    }
-
-    .servicii-grid {
-        grid-template-columns: 1fr;
-    }
+  background: white;
+  border: 1px solid #ddd;
+  padding: 20px;
 }
