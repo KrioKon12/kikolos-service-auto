@@ -2,74 +2,236 @@
 <html lang="ro">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kikolos-Auto – Service Auto</title>
-
-    <!-- Fonturi -->
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap"
-        rel="stylesheet" />
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kikolos-Auto – Service Auto</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-    <nav>
-        <div class="nav-logo">Kikolos<span>-Auto</span></div>
-        <ul class="nav-links">
-            <li><a href="#acasa">Acasă</a></li>
-            <li><a href="#despre">Despre noi</a></li>
-            <li><a href="#servicii">Servicii</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <div class="nav-logo">Kikolos<span>-Auto</span></div>
+    <ul class="nav-links">
+      <li><a href="#acasa">Acasă</a></li>
+      <li><a href="#despre">Despre noi</a></li>
+      <li><a href="#servicii">Servicii</a></li>
+      <li><a href="#preturi">Prețuri</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#inregistrare" class="btn-inregistrare">Înregistrare</a></li>
+    </ul>
+  </nav>
 
-    <!-- HERO -->
-    <section id="acasa">
-        <div class="hero-bg"></div>
-        <h1>Kikolos<span>-Auto</span></h1>
-        <p>Service auto de încredere</p>
-    </section>
+  <section id="acasa">
+    <div class="hero-bg"></div>
+    <h1>Kikolos<span>-Auto</span></h1>
+    <p>Service auto de încredere</p>
+    <a href="#inregistrare" class="btn-programare">Programează-te</a>
+  </section>
 
-    <!-- DESPRE -->
-    <section id="despre">
-        <h2>Despre noi</h2>
-        <div class="linie-rosie"></div>
-        <p>Service auto modern și de încredere.</p>
-    </section>
+  <section id="despre">
+    <h2>Despre noi</h2>
+    <div class="linie-rosie"></div>
+    <div class="despre-inner">
+      <p>Kikolos-Auto este un service auto cu experiență de peste 10 ani în repararea și întreținerea
+        autovehiculelor.
+        Echipa noastră este formată din mecanici calificați care folosesc echipamente moderne pentru a-ți oferi
+        cele mai bune rezultate. Ne mândrim cu transparența, prețurile corecte și respectul față de clienți.</p>
+      <img class="despre-img" src="poze/auto-reparatie.jpg" alt="Reparație auto" />
+    </div>
+  </section>
 
-    <!-- SERVICII -->
-    <section id="servicii">
-        <h2>Servicii</h2>
-        <div class="linie-rosie"></div>
-
-        <div class="servicii-grid">
-            <div class="card">
-                <h3>Diagnoză</h3>
-                <p>Verificare completă a mașinii.</p>
-            </div>
-
-            <div class="card">
-                <h3>Reparații</h3>
-                <p>Reparații rapide și eficiente.</p>
-            </div>
-
-            <div class="card">
-                <h3>Întreținere</h3>
-                <p>Schimburi și verificări periodice.</p>
-            </div>
+  <div id="servicii">
+    <div class="inner">
+      <h2>Servicii</h2>
+      <div class="linie-rosie"></div>
+      <div class="servicii-grid">
+        <div class="card">
+          <img class="card-img" src="poze/masinii reparatie.jpg" alt="Service auto" />
+          <div class="card-icon"></div>
+          <h3>Diagnoză Auto</h3>
+          <p>
+            Verificăm computerul mașinii tale cu echipamente profesionale și identificăm rapid orice problemă tehnică.
+          </p>
         </div>
-    </section>
+        <div class="card">
+          <img class="card-img" src="poze/reparatie capitala.jpg" alt="Reparații auto" />
+          <div class="card-icon"></div>
+          <h3>Reparații</h3>
+          <p>Reparăm motorul, frânele, suspensia și orice altă componentă. Lucrăm rapid și folosim piese de
+            calitate.</p>
+        </div>
+        <div class="card">
+          <img class="card-img" src="poze/intretinere.jpg" alt="Întreținere auto" />
+          <div class="card-icon"></div>
+          <h3>Întreținere</h3>
+          <p>Schimb de ulei, filtre, anvelope și inspecții periodice pentru ca mașina ta să funcționeze perfect.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- CONTACT -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <div class="linie-rosie"></div>
-        <p>Telefon: +373 69 123 456</p>
-    </section>
+  <section id="preturi">
+    <h2>Prețuri</h2>
+    <div class="linie-rosie"></div>
+    <div class="preturi-grid">
+      <div class="pret-item">
 
+        <div class="pret-nume">
+          <img src="poze/dignostica masini.jpg" alt="Diagnostica masina">
+          <span>Diagnoză auto</span>
+        </div>
+        <span class="pret-valoare">200 LEI</span>
+      </div>
+      <div class="pret-item">
+        <div class="pret-nume">
+          <img src="poze/schimbare ulei.jpg" alt="Schimb ulei">
+          <span> Schimb ulei + filtru</span>
+        </div>
+        <span class="pret-valoare">350 LEI</span>
+      </div>
+      <div class="pret-item">
+        <div class="pret-nume">
+          <img src="poze/placute de frana.jpg" alt="Schimb placute frana">
+          <span>Înlocuire plăcuțe frână</span>
+        </div>
+        <span class="pret-valoare">500 LEI</span>
+      </div>
+      <div class="pret-item">
+        <div class="pret-nume">
+          <img src="poze/geometrie roti.jpg" alt="geometria roti">
+          <span>Geometrie roți</span>
+        </div>
+        <span class="pret-valoare">400 LEI</span>
+      </div>
+      <div class="pret-item">
+        <div class="pret-nume">
+          <img src="poze/verificare auto.webp" alt="">
+          <span>Verificare + încărcare baterie</span>
+        </div>
+        <span class="pret-valoare">150 LEI</span>
+      </div>
+      <div class="pret-item">
+        <div class="pret-nume">
+          <img src="poze/alimentarea-sistemului-de-aer-conditionatjpg.jpg" alt="Revizie aer conditionat">
+          <span>Revizie aer condiționat</span>
+        </div>
+        <span class="pret-valoare">600 LEI</span>
+      </div>
+      <div class="pret-item">
+        <div class="pret-nume">
+          <img src="poze/reparatie motoare.jpg" alt="reparatie motor">
+          <span>Reparație motor</span>
+        </div>
+        <span class="pret-valoare">de la 800 LEI</span>
+      </div>
+      <div class="pret-item">
+        <div class="pret-nume">
+          <img src="poze/anvelope.jfif" alt="Schimbare anvelope">
+          <span>Schimb anvelope + balansare</span>
+        </div>
+        <span class="pret-valoare">300 LEI</span>
+      </div>
+    </div>
+    <p class="pret-nota">* Piesele de schimb se calculează separat. Prețul final poate
+      varia în funcție de marca, dificultatea reparației și modelul autovehiculului.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="linie-rosie"></div>
+    <div class="contact-lista">
+      <div class="contact-item">
+        <div class="contact-icon">📞</div>
+        <div class="contact-text">
+          <strong>Telefon</strong>
+          <span>+373 69 123 456</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">✉️</div>
+        <div class="contact-text">
+          <strong>Email</strong>
+          <span>contact@kikolos-auto.md</span>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-icon">📍</div>
+        <div class="contact-text">
+          <strong>Adresă</strong>
+          <span>Str. Mecanizatorilor 14, Chișinău</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="inregistrare">
+    <div class="inner">
+      <h2>Înregistrare</h2>
+      <div class="linie-rosie"></div>
+      <div class="form-grup" id="formGrup">
+        <label>
+          Nume complet
+          <input type="text" id="inputNume" placeholder="Ex: Ion Popescu" />
+        </label>
+        <label>
+          Număr de telefon
+          <input type="tel" id="inputTelefon" placeholder="Ex: +373 69 000 000" />
+        </label>
+        <label>
+          Serviciul dorit
+          <select id="inputServiciu">
+            <option value="">Alege serviciul</option>
+            <option value="Diagnoză auto">Diagnoză auto</option>
+            <option value="Schimb ulei + filtru">Schimb ulei + filtru</option>
+            <option value="Înlocuire plăcuțe frână">Înlocuire plăcuțe frână</option>
+            <option value="Geometrie roți">Geometrie roți</option>
+            <option value="Verificare + înlocuire baterie">Verificare + încărcare baterie</option>
+            <option value="Revizie aer condiționat">Revizie aer condiționat</option>
+            <option value="Reparație motor">Reparație motor</option>
+            <option value="Schimb anvelope + balansare">Schimb anvelope + balansare</option>
+          </select>
+        </label>
+
+        <label>
+          Modelul mașinii
+          <input type="text" id="inputModel" placeholder="Ex: BMW E46, Toyota Prius, Audi A4" />
+        </label>
+
+        <label>
+          Descrierea problemei
+          <textarea id="inputProblema"
+            placeholder="Ex: Mașina pornește greu, se aude un sunet la frânare..."></textarea>
+        </label>
+
+        <div class="form-row">
+          <label>
+            Data programarii
+            <input type="date" id="inputData" />
+          </label>
+          <label>
+            Ora programarii
+            <input type="time" id="inputOra" step="60" />
+          </label>
+        </div>
+        <button class="btn-submit" type="button" onclick="trimiteFormular()">Trimite</button>
+      </div>
+      <div class="mesaj-confirmare" id="mesajConfirmare">
+        <h4>✅ Programare confirmată!</h4>
+        <p>Multumim ca ai ales <strong>Kikolos-Auto</strong>! Cererea ta a fost inregistrata cu succes.</p>
+        <p class="detalii-programare" id="detaliiProgramare"></p>
+        <p style="margin-top:8px;">Te vom contacta in curand pentru confirmare. Ne vedem la service!</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 <span>Kikolos-Auto</span>. Toate drepturile rezervate.
+  </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
