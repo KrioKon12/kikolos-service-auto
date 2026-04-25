@@ -231,7 +231,12 @@
   <footer>
     &copy; 2025 <span>Kikolos-Auto</span>. Toate drepturile rezervate.
   </footer>
+  <script>
+    if (localStorage.getItem("logat") !== "da") {
+      window.location.href = "login.html";
+    }
+  </script>
+
   <script src="script.js"></script>
 </body>
-
 </html>
