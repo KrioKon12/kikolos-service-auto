@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creare cont – Kikolos-Auto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style_login.css">
+</head>
+<body class="login-page">
+    <div class="login-box">
+        <h1>Kikolos<span>-Auto</span></h1>
+        <h2>Creare cont</h2>
+
+        <label>Nume
+            <input type="text" id="registerNume" placeholder="Ex: Popescu">
+        </label>
+
+        <label>Prenume
+            <input type="text" id="registerPrenume" placeholder="Ex: Ion">
+        </label>
+
+        <label>Email
+            <input type="email" id="registerEmail" placeholder="Ex: ion@gmail.com">
+        </label>
+
+        <label>Telefon
+            <input type="tel" id="registerTelefon" placeholder="Ex: 069123456">
+        </label>
+
+        <label>Parolă
+            <input type="password" id="registerParola" placeholder="Minimum 8 caractere">
+        </label>
+
+        <label>Confirmare parolă
+            <input type="password" id="registerConfirmare" placeholder="Repetă parola">
+        </label>
+
+        <button type="button" onclick="creeazaCont()">Înregistrare pe site</button>
+        <p id="registerMesaj"></p>
+
+        <p class="auth-link">Ai deja cont? <a href="login.html">Intră în cont</a></p>
+    </div>
+
+    <script src="loginacc.js"></script>
+</body>
+</html>

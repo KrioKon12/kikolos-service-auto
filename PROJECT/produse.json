@@ -1,0 +1,22 @@
+[
+  {
+    "nume": "Ulei motor 5W-30",
+    "descriere": "Recomandat pentru întreținerea periodică a motorului.",
+    "pret": "de la 350 LEI"
+  },
+  {
+    "nume": "Filtru de ulei",
+    "descriere": "Ajută la protejarea motorului și la menținerea lubrifierii corecte.",
+    "pret": "de la 120 LEI"
+  },
+  {
+    "nume": "Plăcuțe de frână",
+    "descriere": "Componentă importantă pentru siguranța automobilului.",
+    "pret": "de la 500 LEI"
+  },
+  {
+    "nume": "Acumulator auto",
+    "descriere": "Util pentru pornirea mașinii și alimentarea sistemelor electrice.",
+    "pret": "de la 900 LEI"
+  }
+]

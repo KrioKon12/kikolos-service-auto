@@ -19,8 +19,10 @@
       <li><a href="#despre">Despre noi</a></li>
       <li><a href="#servicii">Servicii</a></li>
       <li><a href="#preturi">Prețuri</a></li>
+      <li><a href="#produse">Produse</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="#inregistrare" class="btn-inregistrare">Înregistrare</a></li>
+      <li><button class="btn-logout" type="button" onclick="iesireCont()">Ieșire</button></li>
     </ul>
   </nav>
 
@@ -138,6 +140,14 @@
     </div>
     <p class="pret-nota">* Piesele de schimb se calculează separat. Prețul final poate
       varia în funcție de marca, dificultatea reparației și modelul autovehiculului.</p>
+  </section>
+
+
+  <section id="produse">
+    <h2>Produse recomandate</h2>
+    <div class="linie-rosie"></div>
+    <p class="produse-intro">Mai jos sunt afișate dinamic câteva produse și materiale auto utile, încărcate din fișierul <strong>produse.json</strong>.</p>
+    <div class="produse-grid" id="produseContainer"></div>
   </section>
 
   <section id="contact">

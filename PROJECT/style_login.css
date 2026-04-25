@@ -121,3 +121,27 @@ hr {
     border-top: 1px solid #333333;
     margin: 28px 0;
 }
+
+.auth-link {
+    color: #cccccc;
+    font-size: 14px;
+    margin-top: 18px;
+}
+
+.auth-link a {
+    color: var(--rosu);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.auth-link a:hover {
+    text-decoration: underline;
+}
+
+.mesaj-succes {
+    color: #26ff00 !important;
+}
+
+.mesaj-eroare {
+    color: #ff7777 !important;
+}

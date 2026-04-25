@@ -1,60 +1,31 @@
 <!DOCTYPE html>
 <html lang="ro">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Înregistrare – Kikolos-Auto</title>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap"
-        rel="stylesheet">
+    <title>Login – Kikolos-Auto</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style_login.css">
 </head>
-<link rel="stylesheet" href="style_login.css">
-
 <body class="login-page">
-
     <div class="login-box">
         <h1>Kikolos<span>-Auto</span></h1>
-
-        <h2>Creare cont</h2>
-
-        <label>
-            Nume complet
-            <input type="text" id="signupNume" placeholder="Ex: Ion Popescu">
-        </label>
-
-        <label>
-            Email
-            <input type="email" id="signupEmail" placeholder="Ex: ion@gmail.com">
-        </label>
-
-        <label>
-            Parolă
-            <input type="password" id="signupParola" placeholder="Introduceți parola">
-        </label>
-
-        <button type="button" onclick="creeazaCont()">Creareză cont</button>
-        <p id="signupMesaj"></p>
-
-        <hr>
-
         <h2>Intrare în cont</h2>
 
-        <label>
-            Email
+        <label>Email
             <input type="email" id="loginEmail" placeholder="Ex: ion@gmail.com">
         </label>
 
-        <label>
-            Parolă
+        <label>Parolă
             <input type="password" id="loginParola" placeholder="Introduceți parola">
         </label>
 
         <button type="button" onclick="intraInCont()">Intră pe site</button>
         <p id="loginMesaj"></p>
+
+        <p class="auth-link">Nu ai cont? <a href="register.html">Creează cont</a></p>
     </div>
 
     <script src="loginacc.js"></script>
 </body>
-
 </html>
